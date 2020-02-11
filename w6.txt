@@ -1,0 +1,18 @@
+-การสร้าง directory ทั้งใน cmd และใน Bash,Terminal >> ใช้ mkdir ชื่อdirectory
+-ดูรายการไฟล์ใน directory ใช้ dir (ในcmd) ใช้  ls และ ls -l ในTerminal,Bash
+-เปลี่ยน drive ใช้ ชื่อ drive ตามด้วย : [เช่น d:]
+-เปลี่ยน working directory ใช้ cd ชื่อdirectory ทั้งใน cmd และใน Bash,Terminal
+-กลับไป directory ที่บรรจุ working directory ใช้ cd .. ทั้งใน cmd และใน Bash,Terminal
+-ตรวจสอบ git ในเครื่อง ใช้ cmd  พิมพ์ git --version
+-การสร้างInitialize git repository จะใช้คำสั่ง git init  จะเป็นสร้าง directory  ชื่อ git
+-การตรวจสอบว่า git ใช้งานได้ให้เปิด  Command Prompt  หรือ  Terminal แล้วพิมพ์คำสั่ง git --version
+-การสร้างไฟล์ในโฟลเดอร์ผ่าน Bash (Linux เท่านั้น) ใช้  touch ชื่อไฟล์.นามสกุลไฟล์
+-การเพิ่มข้อความในไฟล์ txt ผ่าน Bash (Linux เท่านั้น) ใช้ echo และ   ใส่ข้อความใน double quote > ชื่อไฟล์ที่จะใส่ข้อความ
+-การตรวจสอบสถานะของไฟล์ จะใช้คำสั่ง git status
+-เพิ่มไฟล์เพื่อจะ commit ใช้คำสั่ง git add ชื่อไฟล์
+-ตั้งค่าชื่อและอีเมลระบุผู้ commit ใช้คำสั่ง git config user.name "ชื่อ" 
+และ  git config user.email "อีเมล" ทั้ง 2 อัน ใช้ในกรณีเครื่องคอมสาธารณะ หากเป็นเครื่องคอมส่วนตัวจะใช้
+git config --global user.name "ชื่อ" และ git config --global user.email "อีเมล"
+-การ commit ไฟล์เพื่อเก็บ checkpoint ของไฟล์ใช้คำสั่ง  git commit -m "Add ชื่อไฟล์" [-m (message) เป็นการกำหนดว่าเราทำอะไรไว้กับไฟล์ ที่ Checkpoint นี้]
+- การดู Checkpoint ทั้งหมดใช้คำสั่ง git log adog [git log --all --decorate --oneline --graph]
+-การเชื่อม local repository กับ github ใช้คำสั่ง  git remote add <ชื่อremote> <git url>
