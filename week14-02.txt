@@ -1,0 +1,17 @@
+14-02-63
+**Git Branch**
+จะเป็นการสร้าง Branch แยกออกมาจาก Branch master
+คำสั่ง git branch ตรวจสอบว่ามี branch อะไรบ้าง ชื่อที่มี * อยู่คือ branch  ที่ใเราช้งานอยู่
+การเปลี่ยน branch ใช้ คำสั่ง git checkout 
+ใช้ git log --all --decorate --oneline --graphดู checkpoint  จะเห็นว่ามี 2branch
+แต่ HEAD จะชี้ไปที่ master เพราะอยู่ที่ branch master (จะเห็นแค่ไฟล์ที่อยู่ ใน branch master)
+การ merge กันให้ไปรวมใน  branch ปลายทางให้ git checkout branch นั้นก่อน
+แล้วใช้คำสั่ง git merge ชื่อ brach ที่จะ  merge เข้าไปในbranch ที่ต้องการ
+คำสั่ง git pull คือจะดึงการเปลี่ยนแปลงจาก branchออกมา
+การสร้าง branch และเข้าไปใน branch เลย ใช้ คำสั่ง git checkout -b <ชื่อ branch>
+ไฟล์เดียวกันคนละ brach จะมีปัญหา เกิด conflict
+<<<<<<< HEAD (มีการเปลี่ยนแปลง)
+======= แยก  branch
+ปุ่ม Accept current  เอาของ HEAD
+Accept incomung change เอาของ branch ที่เลือก
+ถ้าขึ้นสถานะ MERGING ควรจัดการไฟล์นี้ให้เรียบร้อย
